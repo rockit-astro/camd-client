@@ -1,0 +1,11 @@
+_cam()
+{
+    compopt +o default
+    local cur opts
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    opts="$(cam completion ${COMP_LINE})"
+    COMPREPLY=($(compgen -W "${opts}" -- ${cur}))
+    return 0
+}
+
+complete -F _cam cam
