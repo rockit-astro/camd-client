@@ -46,8 +46,6 @@ if __name__ == '__main__':
     if len(args) > 0 and args[0] == 'completion':
         args = args[2:]
         completion = True
-        with open('bar.txt', 'w') as foo:
-            foo.writelines(['\n'.join(sys.argv)])
 
     if len(configs) == 1:
         usage_prefix = SCRIPT_NAME
