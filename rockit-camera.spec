@@ -1,6 +1,6 @@
 Name:      rockit-camera
 Version:   %{_version}
-Release:   1
+Release:   1%{dist}
 Summary:   Generic camera control client for the *_camd daemons
 Url:       https://github.com/rockit-astro/camd
 License:   GPL-3.0
